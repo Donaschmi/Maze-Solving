@@ -16,6 +16,7 @@ class Maze:
         count = 0
 
         for x in range(1, width - 1):
+            # Finding the start Node
             if data[x] > 0:
                 self.start = Maze.Node((0, x))
                 topnodes[x] = self.start
@@ -83,6 +84,7 @@ class Maze:
 
         rowoffset = (height - 1) * width
         for x in range(1, width - 1):
+            # Finding the end Node
             if data[rowoffset + x] > 0:
                 self.end = Maze.Node((height - 1, x))
                 t = topnodes[x]

@@ -42,7 +42,7 @@ class FibPQ(PQueue):
     def decreaseKey(self, node, newPriority):
         return self.heap.decreaseKey(node, newPriority)
 
-class HeapPq(PQueue):
+class HeapPQ(PQueue):
     def __init__(self):
         self.pq = []
         self.removed = set()
